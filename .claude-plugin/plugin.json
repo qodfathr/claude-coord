@@ -1,0 +1,31 @@
+{
+  "name": "coord",
+  "version": "0.2.0",
+  "description": "Lets Claude Code sessions under any login on this machine see each other, exchange messages and claim shared resources through a shared folder.",
+  "author": {
+    "name": "qodfathr",
+    "url": "https://github.com/qodfathr"
+  },
+  "homepage": "https://github.com/qodfathr/claude-coord",
+  "repository": "https://github.com/qodfathr/claude-coord",
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "root": {
+      "type": "string",
+      "title": "Coordination folder",
+      "description": "Absolute path every participating session shares; empty means $HOME/.claude-coord.",
+      "default": ""
+    },
+    "inbound": {
+      "type": "string",
+      "title": "Incoming messages",
+      "description": "deliver: hand each message to the model as it arrives. notify: toast only; /coord read delivers them.",
+      "options": [
+        "deliver",
+        "notify"
+      ],
+      "default": "deliver"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "claude-coord",
+  "owner": {
+    "name": "qodfathr",
+    "url": "https://github.com/qodfathr"
+  },
+  "plugins": [
+    {
+      "name": "coord",
+      "source": "./",
+      "description": "Lets Claude Code sessions under any login on this machine see each other, exchange messages and claim shared resources through a shared folder."
+    }
+  ]
+}
